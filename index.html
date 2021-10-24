@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+        </style>
+
+         <title> Cliente Ajax</title>
+         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+         <script src="disfraz.js"> </script>
+         <script src="cliente.js"> </script>
+         <script src="mensaje.js"> </script>
+    </head>
+<body>
+
+    <h1> Bienvenido al gestor de alquiler de disfraces!</h1>
+
+    <button style="background-color:blue; border-color: black; color: white; " onclick="consultarAllDisfraz()"> Listar disfraces </button>
+    <button style="background-color:blue; border-color: black; color: white; " onclick="consultarAllMensaje()"> Listar Mensajes </button>
+    <button style="background-color:blue; border-color: black; color: white; " onclick="consultarAllCliente()"> Listar Clientes </button>
+
+    <button onclick="location.href='index.html'">Regresar</button>
+
+    <h1></h1>
+
+    <div id="idDivConsulta"></div>
+
+    <h3>Acciones Disfraz</h3>
+
+    <input type="number" id="id1" placeholder="Ingrese el ID">
+    <input type="text" id="brand" placeholder="Ingrese la marca">
+    <input type="number" id="model" placeholder="Ingrese el modelo">
+    <input type="number" id="category_id" placeholder="Ingrese el ID categoria">
+    <input type="text" id="name" placeholder="Ingrese el nombre">
+    <h1></h1>
+    <button onclick="insertarDisfraz()">Crear disfraz</button>
+    <button onclick="location.href='index.html'">Actualizar Disfraz</button>
+
+    <h3>Acciones Cliente</h3>    
+    <input type="number" id="id2" placeholder="Ingrese el ID">
+    <input type="text" id="name" placeholder="Ingrese el nombre">
+    <input type="text" id="email" placeholder="Ingrese el email">
+    <input type="number" id="edad" placeholder="Ingrese la edad">
+    <h1></h1>
+    <button onclick="location.href='index.html'">Crear cliente</button>
+    <button onclick="location.href='index.html'">Actualizar cliente</button>
+
+    <h3>Acciones Mensajes</h3>
+    
+    <input type="number" id="id3" placeholder="Ingrese el ID">
+    <input type="text" id="mensaje" placeholder="Ingrese el mensaje">
+    <h1></h1>
+    <button onclick="location.href='index.html'">Crear Mensaje</button>
+    <button onclick="location.href='index.html'">Actualizar Mensaje</button>
+
+    <button onclick="location.href='index.html'">Llévame a otro lado</button>
+    
+</body>
+</html>
